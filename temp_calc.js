@@ -21,7 +21,6 @@ function conver(){
     document.getElementById("fahre").value = parseFloat(far).toFixed(4);
     document.getElementById("cels").value = parseFloat(cel).toFixed(4);
     document.getElementById("kel").value = parseFloat(kel).toFixed(4);
-    return;
 }
 
 function ClearFields() {
