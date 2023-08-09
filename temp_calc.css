@@ -1,44 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .container {
     position: relative;
 }
 
 .temp-calc {
-    /* display: block; */
     font-family: 'Muli', sans-serif;
     position: absolute;
     text-align: center;
-    height: 400px;
-    width: 700px;
+    height: 45%;
+    width: 40%;
     color: rgb(39, 186, 244);
-    font-size: 30px;
+    font-size: 27px;
     background-color: white;
-    /* margin-bottom: -250px; */
     opacity: 80%;
     object-fit: initial;
-    margin-left: -300px;
-    margin-top: -600px;
-    left: 50%;
     border-radius: 10px;
-    border: 3px black;
+    border: 15% black;
     border-style: inset;
+    align-items: center;
+    z-index: 1;
+    left: 32%;
+    top: 25%;
 }
 
 img {
     display: block;
-    width: 98vw;
-    height: 98vh;
+    width: 100vw;
+    height: 100vh;
     opacity: 70%;
+    position: relative;
 }
 
 button {
     font-family: 'Muli', sans-serif;
     background-color: cyan;
     border-radius: 10px;
-    height: 40px;
-    width: 100px;
+    width: 50%;
     cursor: pointer;
+    padding: 1%;
 }
 
 button:hover {
@@ -49,55 +52,62 @@ button:hover {
 }
 
 input {
-    width: 500px;
-    height: 50px;
+    width: 70%;
+    height: 14%;
     text-align: center;
     font-size: 24px;
+    margin-left: 2%;
     border-radius: 10px;
 }
 
+.text{
+    margin: 5%;
+}
+
 .celsius {
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .ferenheit {
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
 .kelvin {
-    margin-top: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 800px) {
+@media only screen and (min-width: 100px) and (max-width: 1000px) {
     .container {
         flex-direction: column;
-        width: 65vw;
+        width: 65%;
     }
     input{
-        width: 100px;
-        height: 50px;
+        width: 70%;
+        height: 15%;
         flex-direction: column;
         border-radius: 5px;
+        margin: 1%;
     }
     button{
-        width:50px;
-        height: 40px;
-        flex-direction: column;
+        width:40%;
+        height: 90%;
         border-radius: 5px;
         font-size: 10px;
+        align-items: center;
     }
     .temp-calc{
-        width: 200px;
-        height: 400px;
-        object-fit: initial;
-        margin-left: -30px;
-        margin-top: -600px;
-        left: 50%;
+        width: 70%;
+        height: 50%;
         position: absolute;
+        z-index: 1;
+        left:41%;
+        top: 25%;
         text-align: center;
     }
     .text{
-        font-size: 10px;
+        flex-direction: column;
+        font-size: 15px;
     }
     img{
         width: 100vw;
