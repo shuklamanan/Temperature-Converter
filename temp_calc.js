@@ -1,4 +1,4 @@
-function conver(){
+function convert(){
     let cel = document.getElementById("cels").value;
     let far = document.getElementById("fahre").value;
     let kel = document.getElementById("kel").value;
